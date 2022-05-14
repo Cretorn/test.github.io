@@ -1,0 +1,31 @@
+Timing allows you task and starts it at a specific time interval.
+
+e.g. Certain javascript function run every 5 seconds, click a button and then 3 seconds later a message will pop up
+
+
+on the HTML page:
+
+
+  <button onClick="setTimeout()">Click me</button>
+
+This accesses a function from javascript called setTimeout(), which sets a timer and allows us to specify how long the timer would be, and when the time runs out, it will execute a javascript
+function.
+
+  <button onClick="setTimeout(sayHi, 3000)">Click me</button>         <!--Time is unit by milliseconds, 3000 would be 3 seconds -->
+
+
+And after that you would create the sayHi() function in yo js:
+
+
+    function sayHi(){
+		alert("hi");
+	}
+
+Result:
+
+Click button, and after 3 seconds it alerts "Hi".
+
+
+In addition to setTimeout(), there is another function called setInterval(), you can use it to execute the function off the interval, e.g. pops up every two seconds.
+
+	
